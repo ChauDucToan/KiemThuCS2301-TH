@@ -7,7 +7,7 @@ from eapp import db, app
 from flask_login import current_user, logout_user
 from flask_admin import BaseView, expose
 from flask import redirect
-import dao
+import eapp.dao
 
 class AdminView(ModelView):
     def is_accessible(self) -> bool:
